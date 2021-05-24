@@ -43,7 +43,7 @@ import json
 import wget
 chat_id = None
 
-JOIN_ASAP = "You need to Join @GroupMusicXNews for using me :/"           
+JOIN_ASAP = "You need to Join @GautamS_Mirror for using me :/"           
 
 
 def cb_admin_check(func: Callable) -> Callable:
@@ -129,7 +129,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 )
 async def playlist(client, message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -204,7 +204,7 @@ def r_ply(type_):
 )
 async def ee(client, message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -223,7 +223,7 @@ async def ee(client, message):
 @authorized_users_only
 async def settings(client, message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -416,7 +416,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -458,7 +458,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @MusicXHelper to your Group and try again</b>",
+                                  "\n\nOr manually ask @Gautam180304 to your Group and try again</b>",
                               )
                               pass
     try:
@@ -555,7 +555,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via Group Music X 😜".format(
+        caption="▶️ **Playing** here the song requested by {} via Gautam'S Music Bot 😜".format(
         message.from_user.mention()
         ),
     )
@@ -570,7 +570,7 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -581,7 +581,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "Group Music X"
+        user.first_name =  "Gautam'S Music Bot"
     usar = user
     wew = usar.id
     try:
@@ -611,7 +611,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @MusicXHelper to your Group and try again</b>",
+                                  "\n\nOr manually add @Gautam180304 to your Group and try again</b>",
                               )
                               pass
     try:
@@ -705,7 +705,7 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     try:
-        await message._client.get_chat_member(int("-1001246827830"), message.from_user.id)
+        await message._client.get_chat_member(int("-1001292906791"), message.from_user.id)
     except UserNotParticipant:
         await message.reply_text(JOIN_ASAP)
         return
@@ -716,7 +716,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "Group Music X"
+        user.first_name =  "Gautam'S Music Bot"
     usar = user
     wew = usar.id
     try:
@@ -746,7 +746,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @GroupMusicX to your Group and try again</b>",
+                                  "\n\nOr manually add @Gautam180304 to your Group and try again</b>",
                               )
                               pass
     try:
@@ -790,7 +790,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/GroupMusicXBotNews')
+                   url='https://t.me/GautamS_MirrorBotNews')
              ],
              [       
                InlineKeyboardButton(
