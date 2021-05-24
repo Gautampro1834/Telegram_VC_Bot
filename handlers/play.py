@@ -790,7 +790,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/GautamS_MirrorBotNews')
+                   url='https://t.me/GautamS_Mirror')
              ],
              [       
                InlineKeyboardButton(
